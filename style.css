@@ -1,41 +1,25 @@
-@media (min-width: 1600px) {
-  .container-fxl .container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container {
-    max-width: 1440px;
-  }
+.body {
+  font-family: Roboto, sans-serif;
 }
-body {
-  margin: 0;
-}
+
 .homepage {
   background-color: #fff;
   display: flex;
   flex-direction: column;
 }
 
-.hero-section, .site-banner {
-  background-color: #ECF2FA;
-}
+.hero-section,
 .site-banner {
-  padding-top: 118px;
-  padding-bottom: 118px;
+  background-color: #ecf2fa;
 }
 
+.logo {
+  max-width: 100%;
+  height: auto;
+}
 
-.hero-section {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  width: 100%;
-  color: #000;
-}
-@media (max-width: 991px) {
-  .hero-section {
-    max-width: 100%;
-    padding: 0 20px 100px;
-  }
-}
 .hero-bg::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -45,40 +29,24 @@ body {
 .hero-bg img {
   position: absolute;
   inset: 0;
-  /* display: block; */
   width: 100%;
   height: 100%;
   object-fit: cover;
   z-index: 1;
 }
+
 .header {
-  position: relative;
   display: flex;
   width: 100%;
-  gap: 20px;
   flex-wrap: wrap;
+  row-gap: 15px;
   justify-content: space-between;
-  font: 400 20px Roboto, sans-serif;
-  box-sizing: border-box;
-  z-index: 2;
 }
-@media (max-width: 991px) {
-  .header {
-    max-width: 100%;
-  }
-}
-.logo {
-  object-fit: contain;
-  object-position: center;
-  width: 375px;
-  margin: auto 0;
-}
+
 .navigation {
   display: flex;
-  min-height: 80px;
   align-items: center;
-  gap: 21px;
-  justify-content: start;
+  gap: 10px 21px;
   flex-wrap: wrap;
 }
 
@@ -86,31 +54,14 @@ body {
   font: 400 20px Roboto, sans-serif;
   text-decoration: none;
   color: #000;
-  display: inline-block;
-  box-sizing: border-box;
-}
-.navigation .nav-item:hover {
-  color: #000;
-  border-bottom: 2px solid #004AAD;
-}
-
-@media (max-width: 991px) {
-  .navigation {
-    max-width: 100%;
-  }
-}
-.nav-item {
-  align-self: stretch;
-  gap: 10px;
-  white-space: nowrap;
-  margin: auto 0;
   padding: 10px;
 }
-@media (max-width: 991px) {
-  .nav-item {
-    white-space: initial;
-  }
+
+.navigation .nav-item:hover {
+  color: #000;
+  border-bottom: 2px solid #004aad;
 }
+
 a.nav-button {
   align-self: stretch;
   border-radius: 13px;
@@ -123,72 +74,50 @@ a.nav-button {
 }
 
 a.nav-button:hover {
-  background-color: #EBF1FA;
+  background-color: #ebf1fa;
   color: #000;
   transition: background-color 0.3s ease-in-out;
 }
 
+.site-banner {
+  overflow: auto;
+}
+
 .hero-content {
-  position: relative;
+  margin: 118px auto;
   display: flex;
   width: 863px;
   max-width: 100%;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  margin: 0 auto;
   font: 600 22px Roboto Slab, sans-serif;
+  font-weight: 600;
 }
 
-@media (max-width: 991px) {
-  .hero-content {
-    margin: 40px 0 10px;
-  }
-}
 .hero-title {
   font-size: 60px;
   text-align: center;
 }
-@media (max-width: 991px) {
-  .hero-title {
-    max-width: 100%;
-    font-size: 40px;
-  }
-}
-.hero-divider
- {
-  border: none; /* Remove default border */
-  border-top: 2px solid #004AAD; /* Creates a 2px blue horizontal line */
+
+.hero-divider {
+  border: 1px solid #004aad; /* Creates a 2px blue horizontal line */
   width: 80%; /* Adjust the width as necessary */
-  margin: 10px 0;
-  opacity: 1;
+  margin-top: 20px;
 }
-.contact-us-divider
- {
+.contact-us-divider {
   border: none; /* Remove default border */
-  border-top: 2px solid #004AAD; /* Creates a 2px blue horizontal line */
+  border-top: 2px solid #004aad; /* Creates a 2px blue horizontal line */
   width: 265px; /* Adjust the width as necessary */
   margin: 10px 0;
   max-width: 50%;
   opacity: 1;
 }
-@media (max-width: 991px) {
-  .hero-divider {
-    margin-top: 40px;
-  }
-}
+
 .hero-subtitle {
   text-align: center;
-  align-self: stretch;
   margin-top: 45px;
   line-height: 35px;
-  font-size: 24px;
-}
-@media (max-width: 991px) {
-  .hero-subtitle {
-    max-width: 100%;
-    margin-top: 40px;
-  }
+  font-size: 26px;
 }
 
 .banner-button {
@@ -203,7 +132,6 @@ a.nav-button:hover {
   font-size: 26px;
   border-radius: 13px;
   background-color: #004aad;
-  font-family: Roboto, sans-serif;
   color: #fff;
   font-weight: 400;
   letter-spacing: 1.1px;
@@ -215,30 +143,28 @@ a.nav-button:hover {
 .cta-icon {
   display: inline-block;
   width: 45px;
-  height: 8px;
+  height: 13px;
   margin-left: 8px;
-  background-image: url('./images/arrow-icon-white.svg');
+  background-repeat: no-repeat;
+  background-image: url("./images/arrow-icon-white.svg");
 }
 
 .cta-button:hover .cta-icon {
-  background-image: url('./images/arrow-icon-white.svg');
+  background-image: url("./images/arrow-icon-black.svg");
 }
 
 .cta-button:hover {
-  background-color:#ECF2FA;
+  background-color: #ecf2fa;
   color: #000;
 }
 
-.cta-button:hover .cta-icon {
-  background-image: url('./images/arrow-icon-black.svg');
-  background-size: contain;
-  background-repeat: no-repeat;
+.services-section {
+  padding-top: 50px;
 }
+
 .services-title {
   color: #004aad;
-  align-self: start;
   font: 600 33px Roboto, sans-serif;
-  margin-top: 50px;
   letter-spacing: 2px;
 }
 
@@ -247,27 +173,14 @@ a.nav-button:hover {
   align-self: start;
   font: 500 28px Roboto Slab, sans-serif;
   margin-top: 20px;
-  letter-spacing: 2px;
+  letter-spacing: 1.5px;
   line-height: 35px;
 }
-@media (max-width: 991px) {
-  .services-subtitle {
-    max-width: 100%;
-  }
-}
+
 .services-grid {
-  width: 100%;
-  align-items: center;
-  justify-content: center;
   margin: 108px auto;
 }
 
-.service-card {
-  text-align: center;
-  font-family: Roboto, sans-serif;
-  color: #000;
-  font-weight: 400;
-}
 .service-image {
   aspect-ratio: 1.12;
   object-fit: contain;
@@ -285,7 +198,6 @@ a.nav-button:hover {
   padding: 0 30px;
 }
 
-
 .drupal-box {
   display: flex;
   flex-direction: column;
@@ -296,11 +208,7 @@ a.nav-button:hover {
   width: 100%;
   padding: 38px 15px 38px 34px;
 }
-@media (max-width: 991px) {
-  .drupal-box {
-    padding-left: 20px;
-  }
-}
+
 .drupal-title {
   position: relative;
   color: #0077c0;
@@ -357,11 +265,7 @@ a.nav-button:hover {
   justify-content: center;
   padding: 79px 0;
 }
-@media (max-width: 991px) {
-  .open-source-section {
-    max-width: 100%;
-  }
-}
+
 .open-source-icon {
   aspect-ratio: 90.91;
   object-fit: contain;
@@ -379,20 +283,12 @@ a.nav-button:hover {
   justify-content: center;
   flex-wrap: wrap;
 }
-@media (max-width: 991px) {
-  .open-source-title-wrapper {
-    max-width: 100%;
-  }
-}
+
 .open-source-title {
   align-self: stretch;
   margin: auto 0;
 }
-@media (max-width: 991px) {
-  .open-source-title {
-    max-width: 100%;
-  }
-}
+
 .open-source-icon-small {
   aspect-ratio: 0.95;
   object-fit: contain;
@@ -407,11 +303,7 @@ a.nav-button:hover {
   align-self: stretch;
   margin-top: 22px;
 }
-@media (max-width: 991px) {
-  .open-source-description {
-    max-width: 100%;
-  }
-}
+
 .contact-section {
   background-color: #fff;
   display: flex;
@@ -424,11 +316,7 @@ a.nav-button:hover {
   justify-content: start;
   padding: 73px 0;
 }
-@media (max-width: 991px) {
-  .contact-section {
-    max-width: 100%;
-  }
-}
+
 .contact-icon {
   aspect-ratio: 90.91;
   object-fit: contain;
@@ -444,11 +332,7 @@ a.nav-button:hover {
   align-self: stretch;
   margin-top: 22px;
 }
-@media (max-width: 991px) {
-  .contact-title {
-    max-width: 100%;
-  }
-}
+
 .contact-button {
   border-radius: 3px;
   background-color: #004aad;
@@ -465,12 +349,7 @@ a.nav-button:hover {
   padding: 10px 30px;
   border: 2px solid #004aad;
 }
-@media (max-width: 991px) {
-  .contact-button {
-    white-space: initial;
-    padding: 0 20px;
-  }
-}
+
 .contact-button-icon {
   aspect-ratio: 5.75;
   object-fit: contain;
@@ -481,30 +360,18 @@ a.nav-button:hover {
 }
 .footer {
   background-color: #ecf2fa;
-  display: flex;
-  width: 100%;
-  align-items: flex-start;
-  gap: 20px;
-  overflow: hidden;
-  flex-wrap: wrap;
-  justify-content: space-between;
 }
-@media (max-width: 991px) {
-  .footer {
-    max-width: 100%;
-    padding-left: 20px;
-  }
-}
+
 .footer-content {
   display: flex;
   margin-top: 39px;
   flex-direction: column;
   align-items: start;
   justify-content: end;
-
 }
 .footer-logo {
   width: 375px;
+  max-width: 100%;
   margin-bottom: 82px;
   margin-top: 4px;
 }
@@ -512,11 +379,7 @@ a.nav-button:hover {
   font-size: 14px;
   color: #000;
 }
-@media (max-width: 991px) {
-  .footer-copyright {
-    margin-top: 40px;
-  }
-}
+
 .footer-links {
   display: flex;
   min-height: 15px;
@@ -561,11 +424,7 @@ a.nav-button:hover {
   justify-content: start;
   font: 500 20px Roboto, sans-serif;
 }
-@media (max-width: 991px) {
-  .contact-email {
-    white-space: initial;
-  }
-}
+
 .email-icon {
   aspect-ratio: 1;
   object-fit: contain;
@@ -578,11 +437,14 @@ a.nav-button:hover {
   align-self: stretch;
   margin: auto 0;
   text-decoration: none;
-  color: #004AAD;
+  color: #004aad;
 }
 
 .dots-design {
   margin-top: 10px;
+}
+.dots-design img {
+  max-width: 100%;
 }
 
 .visually-hidden {
@@ -595,4 +457,79 @@ a.nav-button:hover {
   clip: rect(0, 0, 0, 0);
   white-space: nowrap;
   border: 0;
+}
+
+
+@media (min-width: 1600px) {
+  .container-fxl .container-xxl,
+  .container-xl,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container {
+    max-width: 1440px;
+  }
+}
+
+/* Media Queries at the bottom */
+@media (max-width: 991px) {
+  .site-banner {
+    padding-top: 78px;
+    padding-bottom: 78px;
+  }
+  .footer .container .row {
+    flex-direction: column-reverse;
+  }
+  .footer-logo {
+    margin-bottom: 38px;
+  }
+  .hero-content {
+    margin: 40px 0 10px;
+  }
+  .hero-title {
+    max-width: 100%;
+    font-size: 40px;
+  }
+  .hero-divider {
+    margin-top: 40px;
+  }
+  .hero-subtitle {
+    max-width: 100%;
+    margin-top: 40px;
+  }
+  .services-subtitle {
+    max-width: 100%;
+  }
+  .open-source-section,
+  .open-source-title-wrapper,
+  .open-source-title,
+  .open-source-description {
+    max-width: 100%;
+  }
+  .contact-section,
+  .contact-title,
+  .contact-button,
+  .contact-email {
+    max-width: 100%;
+  }
+  .footer {
+    max-width: 100%;
+    margin-top: 40px;
+  }
+  .nav-item {
+    white-space: initial;
+  }
+  .services-grid .row > div {
+    margin-bottom: 20px;
+  }
+  .service-description {
+    margin-top: 12px;
+  }
+}
+
+@media (max-width: 576px) {
+  .site-banner {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
 }
