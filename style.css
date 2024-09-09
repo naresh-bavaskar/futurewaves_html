@@ -105,12 +105,10 @@ a.nav-button:hover {
   margin-top: 20px;
 }
 .contact-us-divider {
-  border: none; /* Remove default border */
-  border-top: 2px solid #004aad; /* Creates a 2px blue horizontal line */
+  border: 1px solid #004aad; /* Creates a 2px blue horizontal line */
   width: 265px; /* Adjust the width as necessary */
-  margin: 10px 0;
+  margin: 10px auto;
   max-width: 50%;
-  opacity: 1;
 }
 
 .hero-subtitle {
@@ -252,41 +250,13 @@ a.nav-button:hover {
 }
 .open-source-section {
   background-color: #fbfcff;
-  display: flex;
-  margin-top: 24px;
-  min-height: 278px;
-  width: 100%;
-  flex-direction: column;
-  overflow: hidden;
-  align-items: center;
-  font-family: Roboto, sans-serif;
-  color: #000;
-  text-align: center;
-  justify-content: center;
   padding: 79px 0;
 }
 
-.open-source-icon {
-  aspect-ratio: 90.91;
-  object-fit: contain;
-  object-position: center;
-  width: 266px;
-  max-width: 100%;
-}
-.open-source-title-wrapper {
-  display: flex;
-  margin-top: 22px;
-  align-items: center;
-  gap: 32px;
-  font-size: 36px;
-  font-weight: 500;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
 .open-source-title {
-  align-self: stretch;
+  font-size: 36px;
   margin: auto 0;
+  font-weight: 500;
 }
 
 .open-source-icon-small {
@@ -300,21 +270,25 @@ a.nav-button:hover {
 .open-source-description {
   font-size: 18px;
   font-weight: 400;
-  align-self: stretch;
   margin-top: 22px;
+}
+.open-source-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Roboto, sans-serif;
+  color: #000;
 }
 
 .contact-section {
-  background-color: #fff;
+  padding: 73px 0;
+}
+
+.contact-section-wrapper {
   display: flex;
-  min-height: 331px;
-  width: 100%;
   flex-direction: column;
-  overflow: hidden;
   align-items: center;
   font-family: Roboto, sans-serif;
-  justify-content: start;
-  padding: 73px 0;
 }
 
 .contact-icon {
@@ -328,8 +302,6 @@ a.nav-button:hover {
   color: #004aad;
   font-size: 40px;
   font-weight: 500;
-  text-align: center;
-  align-self: stretch;
   margin-top: 22px;
 }
 
@@ -394,7 +366,6 @@ a.nav-button:hover {
 
 .footer-social {
   display: flex;
-  margin-top: 39px;
   flex-direction: column;
   align-items: center;
   justify-content: end;
@@ -420,8 +391,6 @@ a.nav-button:hover {
   align-items: center;
   gap: 10px;
   color: #004aad;
-  white-space: nowrap;
-  justify-content: start;
   font: 500 20px Roboto, sans-serif;
 }
 
