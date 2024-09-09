@@ -2,37 +2,14 @@
   font-family: Roboto, sans-serif;
 }
 
-.homepage {
-  background-color: #fff;
-  display: flex;
-  flex-direction: column;
-}
-
 .hero-section,
 .site-banner {
   background-color: #ecf2fa;
 }
 
-.logo {
+img {
   max-width: 100%;
   height: auto;
-}
-
-.hero-bg::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: -1;
-}
-.hero-bg img {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: 1;
 }
 
 .header {
@@ -62,23 +39,6 @@
   border-bottom: 2px solid #004aad;
 }
 
-a.nav-button {
-  align-self: stretch;
-  border-radius: 13px;
-  background-color: #004aad;
-  gap: 10px;
-  color: #fff;
-  margin: auto 0;
-  padding: 14px 14px;
-  border: 2px solid #004aad;
-}
-
-a.nav-button:hover {
-  background-color: #ebf1fa;
-  color: #000;
-  transition: background-color 0.3s ease-in-out;
-}
-
 .site-banner {
   overflow: auto;
 }
@@ -100,13 +60,14 @@ a.nav-button:hover {
 }
 
 .hero-divider {
-  border: 1px solid #004aad; /* Creates a 2px blue horizontal line */
-  width: 80%; /* Adjust the width as necessary */
+  border: 1px solid #004aad;
+  width: 80%;
   margin-top: 20px;
 }
+
 .contact-us-divider {
-  border: 1px solid #004aad; /* Creates a 2px blue horizontal line */
-  width: 265px; /* Adjust the width as necessary */
+  border: 1px solid #004aad;
+  width: 265px;
   margin: 10px auto;
   max-width: 50%;
 }
@@ -179,75 +140,17 @@ a.nav-button:hover {
   margin: 108px auto;
 }
 
-.service-image {
-  aspect-ratio: 1.12;
-  object-fit: contain;
-  object-position: center;
-  width: 360px;
-  max-width: 100%;
-}
 .service-title {
   font-size: 32px;
   margin-top: 30px;
 }
+
 .service-description {
   font-size: 18px;
   margin-top: 30px;
   padding: 0 30px;
 }
 
-.drupal-box {
-  display: flex;
-  flex-direction: column;
-  border-radius: 15px;
-  box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.25);
-  position: relative;
-  aspect-ratio: 1.136;
-  width: 100%;
-  padding: 38px 15px 38px 34px;
-}
-
-.drupal-title {
-  position: relative;
-  color: #0077c0;
-  align-self: center;
-  font: 700 32px Inter, sans-serif;
-}
-.drupal-version {
-  position: relative;
-  display: flex;
-  margin-top: 6px;
-  align-items: start;
-  gap: 19px;
-}
-.version-wrapper {
-  display: flex;
-  margin-top: 4px;
-}
-.version-icon {
-  aspect-ratio: 0.76;
-  object-fit: contain;
-  object-position: center;
-  width: 34px;
-  margin: auto 0;
-}
-.version-number {
-  aspect-ratio: 1.01;
-  object-fit: contain;
-  object-position: center;
-  width: 105px;
-  max-width: 100%;
-}
-.drupal-upgrade-title {
-  color: #000;
-  margin-top: 30px;
-  font: 400 32px Roboto, sans-serif;
-}
-.drupal-upgrade-description {
-  color: #000;
-  margin-top: 30px;
-  font: 400 16px Roboto, sans-serif;
-}
 .open-source-section {
   background-color: #fbfcff;
   padding: 79px 0;
@@ -259,14 +162,6 @@ a.nav-button:hover {
   font-weight: 500;
 }
 
-.open-source-icon-small {
-  aspect-ratio: 0.95;
-  object-fit: contain;
-  object-position: center;
-  width: 52px;
-  align-self: stretch;
-  margin: auto 0;
-}
 .open-source-description {
   font-size: 18px;
   font-weight: 400;
@@ -291,13 +186,6 @@ a.nav-button:hover {
   font-family: Roboto, sans-serif;
 }
 
-.contact-icon {
-  aspect-ratio: 90.91;
-  object-fit: contain;
-  object-position: center;
-  width: 266px;
-  max-width: 100%;
-}
 .contact-title {
   color: #004aad;
   font-size: 40px;
@@ -305,31 +193,6 @@ a.nav-button:hover {
   margin-top: 22px;
 }
 
-.contact-button {
-  border-radius: 3px;
-  background-color: #004aad;
-  display: flex;
-  margin-top: 22px;
-  align-items: center;
-  gap: 10px;
-  font-size: 22px;
-  color: #fff;
-  font-weight: 400;
-  white-space: nowrap;
-  text-transform: uppercase;
-  justify-content: center;
-  padding: 10px 30px;
-  border: 2px solid #004aad;
-}
-
-.contact-button-icon {
-  aspect-ratio: 5.75;
-  object-fit: contain;
-  object-position: center;
-  width: 46px;
-  align-self: stretch;
-  margin: auto 0;
-}
 .footer {
   background-color: #ecf2fa;
 }
@@ -341,12 +204,14 @@ a.nav-button:hover {
   align-items: start;
   justify-content: end;
 }
+
 .footer-logo {
   width: 375px;
   max-width: 100%;
   margin-bottom: 82px;
   margin-top: 4px;
 }
+
 .footer-copyright {
   font-size: 14px;
   color: #000;
@@ -360,6 +225,7 @@ a.nav-button:hover {
   justify-content: center;
   margin-bottom: 20px;
 }
+
 .footer-links a {
   color: #818181;
 }
@@ -382,7 +248,7 @@ a.nav-button:hover {
 }
 
 .social-buttons a:hover i {
-  color: #004aad; /* Twitter blue */
+  color: #004aad;
 }
 
 .contact-email {
@@ -394,17 +260,7 @@ a.nav-button:hover {
   font: 500 20px Roboto, sans-serif;
 }
 
-.email-icon {
-  aspect-ratio: 1;
-  object-fit: contain;
-  object-position: center;
-  width: 26px;
-  align-self: stretch;
-  margin: auto 0;
-}
 .email-address {
-  align-self: stretch;
-  margin: auto 0;
   text-decoration: none;
   color: #004aad;
 }
@@ -412,22 +268,6 @@ a.nav-button:hover {
 .dots-design {
   margin-top: 10px;
 }
-.dots-design img {
-  max-width: 100%;
-}
-
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  white-space: nowrap;
-  border: 0;
-}
-
 
 @media (min-width: 1600px) {
   .container-fxl .container-xxl,
@@ -448,6 +288,7 @@ a.nav-button:hover {
   }
   .footer .container .row {
     flex-direction: column-reverse;
+    align-content: center;
   }
   .footer-logo {
     margin-bottom: 38px;
