@@ -297,37 +297,16 @@ img {
     margin: 40px 0 10px;
   }
   .hero-title {
-    max-width: 100%;
     font-size: 40px;
   }
   .hero-divider {
     margin-top: 40px;
   }
   .hero-subtitle {
-    max-width: 100%;
     margin-top: 40px;
   }
-  .services-subtitle {
-    max-width: 100%;
-  }
-  .open-source-section,
-  .open-source-title-wrapper,
-  .open-source-title,
-  .open-source-description {
-    max-width: 100%;
-  }
-  .contact-section,
-  .contact-title,
-  .contact-button,
-  .contact-email {
-    max-width: 100%;
-  }
-  .footer {
-    max-width: 100%;
-    margin-top: 40px;
-  }
-  .nav-item {
-    white-space: initial;
+  .footer-social {
+    margin-top: 30px;
   }
   .services-grid .row > div {
     margin-bottom: 20px;
